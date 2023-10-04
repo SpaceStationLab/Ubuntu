@@ -23,3 +23,7 @@
 `sudo apt -y install ssh` : ssh 설치
 
 `sudo systemctl enable ssh`: putty 에서의 ssh 재부팅에도 자동으로 설정
+
+`sudo timedatectl set-timezeon "Asia/Seoul"` : 현재 서울 시간 변경 원래는 UTC시간
+
+`date | cal` : 캘린더 및 달력
