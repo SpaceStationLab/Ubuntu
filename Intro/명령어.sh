@@ -10,10 +10,6 @@
 
 `sudo systemctl enable ssh`: putty 에서의 ssh 재부팅에도 자동으로 설정
 
-`sudo timedatectl set-timezeon "Asia/Seoul"` : 현재 서울 시간 변경 원래는 UTC시간
-
-`date | cal` : 캘린더 및 달력
-
 ```
     여기서 이걸 왜 설치하냐면..
     Putty로서 접속을 하기위함
@@ -40,3 +36,30 @@
 
 ---
 
+`sudo timedatectl set-timezeon "Asia/Seoul"` : 현재 서울 시간 변경 원래는 UTC시간
+
+`date | cal` : 캘린더 및 달력
+
+`dpkg -l | nl` : 설치된 패키지 확인
+
+`sudo apt -y install language-pack-ko` : 한국어 패치
+
+`nl /etc/default/locale` : 해당 언어 위치
+
+`sudo update-locale LANG=ko_KR.UTF-8 LC_MESSAGES=POSIX` : 한국어 업데이트 → 한국어 변경됨
+이러한게 바로 세션이라는 것 .
+    
+
+창 새로 띄우는건 창 닫는 곳에 우클릭 
+Duplicate Session
+
+`sudo apt -y install gcc` : 해당 부분은 잘모르겠음
+
+root권한이 필요하면 sudo를 꼭 써야함 
+
+`sudo -i` : 해당 root로서 가기
+
+`sudo passwd root` : 관리자 권한 비밀번호 변경
+-> qwer
+
+`su -` : 관리자로서 계정 변경
