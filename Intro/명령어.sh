@@ -74,3 +74,33 @@ root권한이 필요하면 sudo를 꼭 써야함
 `apt -y install gcc g++` : C언어 C++ 다운
 
 `apt-get update` : 혹시 에러가 나오면 업데이트!
+
+
+--- 
+
+```
+root@doyoungserver:~# dpkg -l | grep sql
+ii  libsqlite3-0:amd64                    3.31.1-4ubuntu0.5                 amd64        SQLite 3 shared library
+root@doyoungserver:~# dpkg -l | grep mysql
+root@doyoungserver:~# dpkg -l | grep mariadb
+
+설치 false!! 
+```
+
+`apt -y install sqlite3` : sqlite3 다운로드
+        ㄴ `splite3` : 들어가기 
+        ㄴ `.quit` : 나가기
+
+`.header on` + `.mode column` : 해더 및 컬럼에 디자인입히기? 잘보임..
+
+`apt -y install mariadb-server` : 마리아디비 서버 다운로드 및 mysql
+        ㄴ `mysql` : 들어가기
+        ㄴ `update user set password=password(비밀번호)` : 암호화해서 들어감
+
+`systemctl status mariadb` : 실행중인가? 
+`ps -ef | grep mysql` : 이런거로도 실행중인지 확인 가능
+
+`ctrl + l` : 화면 다지움 == `clear`
+
+`flush privileges;` : 해당 DB권한 적용시켜주는 명령어
+
