@@ -63,3 +63,14 @@ root권한이 필요하면 sudo를 꼭 써야함
 -> qwer
 
 `su -` : 관리자로서 계정 변경
+
+
+--- 
+
+`pythone3` : default로서 설치가 되어있다. `quit()` : 끝내기
+
+`pythone3 --verison` : 버전확인 
+
+`apt -y install gcc g++` : C언어 C++ 다운
+
+`apt-get update` : 혹시 에러가 나오면 업데이트!
